@@ -1,0 +1,33 @@
+.app__services-section {
+  background: var(--custom-dark-gradient);
+}
+
+.app__services-div-overlay {
+  width: 100%;
+  flex-direction: column;
+}
+
+.app__servicesCards-overlay {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 1224px) {
+  .app__servicesCards-overlay {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .app__servicesCards-overlay {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .app__servicesCards-overlay {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

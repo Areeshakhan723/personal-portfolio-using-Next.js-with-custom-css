@@ -1,0 +1,126 @@
+.skills-section {
+  background: var(--custom-dark-gradient);
+}
+
+.app__info-overley {
+  padding-left: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.app__education-info-content {
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+}
+
+.app__education-heading {
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+}
+.app__education-year {
+  color: var(--darker-gray);
+  font-size: 14px;
+  margin-top: 1.75rem;
+}
+
+.app__education-subHeading {
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.app__education-para {
+  color: var(--light-gray);
+  text-wrap: wrap;
+}
+
+.app__skills-info-content {
+  margin-top: 16px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.app__skills-div-overley {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.app__skills-div-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__skills-para-div {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--darker-gray);
+}
+
+.app__skills-percentage {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--darker-gray);
+  text-align: end;
+}
+
+.app__skills-scaleline-overley {
+  width: 100%;
+  max-width: 700px;
+  background-color: white;
+  border-radius: 0px;
+}
+
+.app__skills-scaleline {
+  height: 10px;
+  background: var(--blue);
+  border-radius: 0px 5px 5px 0px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .app__info-overley {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .app__info-content {
+    margin-top: 2rem;
+  }
+
+  .app__education-heading {
+    font-size: 30px;
+  }
+
+  .app__skills-info-content {
+    margin-top: 32px;
+  }
+
+  .app__skills-div-content {
+    width: 300px;
+  }
+
+  .app__skills-scaleline-overley {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app__skills-div-content {
+    width: 250px;
+  }
+
+  .app__skills-scaleline-overley {
+    max-width: 250px;
+  }
+}

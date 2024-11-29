@@ -1,0 +1,60 @@
+.servicesCards__cards-overley {
+  position: relative;
+  width: 100%;
+  margin-top: 12px;
+  padding-top: 8px;
+  height: auto;
+}
+.servicesCards__cards-bg-layer {
+  position: absolute;
+  border-radius: 24px;
+  background: var(--blue);
+  inset: 0;
+  opacity: 0.2;
+}
+
+.servicesCards__content-overley {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.servicesCards__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.servicesCards__heading {
+  color: white;
+  text-align: left;
+  font-size: 24px;
+  padding: 20px;
+}
+.servicesCards__Cards-imgs-overley {
+  height: 2px;
+  width: auto;
+  background: var(--darker-gray);
+  margin: 20px;
+}
+.servicesCards__Cards-imgs {
+  object-fit: contain;
+  width: 100%;
+  max-width: 300px;
+  padding-top: 16px;
+}
+
+@media screen and (min-width: 1224px) {
+  .servicesCards__heading {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .servicesCards__cards-bg-layer {
+    opacity: 0.3;
+  }
+
+  .servicesCards__heading {
+    font-size: 20px;
+  }
+}

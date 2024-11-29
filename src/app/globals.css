@@ -1,42 +1,91 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+:root {
+  --black: #000000;
+  --light-gray: #d9d9d9;
+  --darker-gray: #a9a9a9;
+  --blue: #0d98ba;
+  --dark-blue: #095769;
+  --custom-gradient: linear-gradient(135deg, #0b1c3f, #000000);
+  --custom-dark-gradient: linear-gradient(135deg, #0a0f1a, #111827);
+}
+
+.custom-gradient {
+  background-color: var(--custom-gradient);
+}
+
+.custom-dark-gradient {
+  background-color: var(--custom-dark-gradient);
+}
+
+.max-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.padding {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media (min-width: 640px) {
+  .padding {
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+.padding-x {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+@media (min-width: 640px) {
+  .padding-x {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
+
+.padding-y {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media (min-width: 640px) {
+  .padding-y {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head_text {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width: 760px) {
+  .head_text {
+    font-size: 36px;
   }
 }

@@ -1,0 +1,69 @@
+.app__navbar-small-screen {
+  display: none;
+}
+.smallscreen-overlay {
+  height: 100vh;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  flex-direction: column;
+  z-index: 5;
+  background-color: black;
+  transition: 0.5s ease;
+}
+
+.smallscreen-overlay .navbar__close-icon {
+  z-index: 5;
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  cursor: pointer;
+}
+.smallscreen_ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-direction: column;
+  position: absolute;
+  gap: 1.5rem;
+}
+
+.smallscreen_ul li a {
+  color: var(--blue);
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.smallscreen_ul li {
+  margin-top: 10px;
+}
+
+.smallscreen_ul li a:hover {
+  color: var(--dark-blue);
+}
+
+.smallscreen_ul li a:hover {
+  text-decoration: underline;
+  transition: all 300 ease-out;
+  font-size: 25px;
+}
+
+/* for bigger devices */
+@media screen and (max-width: 1024px) {
+  .app__navbar-links {
+    display: none;
+  }
+  .app__navbar-small-screen {
+    display: flex;
+  }
+}
+
+/* For mobile divices */
+@media screen and (max-width: 640px) {
+  .app__navbar {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,22 @@
+.app__project-overley-div {
+  width: 100%;
+}
+
+.app__projectCards-overley {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media screen and (max-width: 1224px) {
+  .app__projectCards-overley {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .app__projectCards-overley {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
